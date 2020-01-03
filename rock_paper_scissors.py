@@ -21,7 +21,7 @@ def validate_player(input):
     global validate_player_counter
     if input not in pick_list:
         validate_player_counter += 1
-        print("Try again, pick between: Rock, Paper or Scissors.\n")
+        print("Try again, pick between:" + str(pick_list).strip("[]") + "\n")
         if validate_player_counter == 3:
             print("Seems like the game instructions are unclear.")
             print("Closing the game due to incompetence.")
@@ -34,7 +34,9 @@ def ask_player(*args):
     if args == "again":
         player_choice = input().lower()
     else:
-        player_choice = input("Choose between Rock, Paper or scissors.\n").lower()
+        player_choice = input(
+            "Choose between " + str(pick_list).strip("[]") + "\n"
+        ).lower()
 
     validate_player(player_choice)
     return player_choice
