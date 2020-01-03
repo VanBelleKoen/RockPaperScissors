@@ -21,7 +21,7 @@ def validate_player(input):
     global validate_player_counter
     if input not in pick_list:
         validate_player_counter += 1
-        print("Try again, pick between:" + str(pick_list).strip("[]") + "\n")
+        print("Try again, pick between: " + str(pick_list).strip("[]") + "\n")
         if validate_player_counter == 3:
             print("Seems like the game instructions are unclear.")
             print("Closing the game due to incompetence.")
@@ -69,7 +69,6 @@ def fetch_strenght(player_choice):
 
 
 def play():
-    global player_choice
     ask_player()
     computer_choice = ask_computer()
     print(
