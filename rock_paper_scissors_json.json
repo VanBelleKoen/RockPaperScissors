@@ -1,0 +1,14 @@
+[
+  {
+    "name": "rock",
+    "strength": ["scissors"]
+  },
+  {
+    "name": "paper",
+    "strength": ["rock"]
+  },
+  {
+    "name": "scissors",
+    "strength": ["paper"]
+  }
+]
