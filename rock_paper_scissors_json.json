@@ -1,18 +1,22 @@
 [
   {
     "name": "rock",
-    "strength": ["scissors"]
+    "strength": ["scissors", "lizard"]
   },
   {
     "name": "paper",
-    "strength": ["rock"]
+    "strength": ["rock", "spock"]
   },
   {
     "name": "scissors",
-    "strength": ["paper"]
+    "strength": ["paper", "lizard"]
   },
   {
-    "name": "bassballbat",
-    "strength": ["gun"]
+    "name": "spock",
+    "strength": ["scissors", "rock"]
+  },
+  {
+    "name": "lizard",
+    "strength": ["spock", "paper"]
   }
 ]
