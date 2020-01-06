@@ -1,6 +1,7 @@
 import random
 import json
 
+
 with open("rock_paper_scissors_json.json", "r") as myfile:
     data = myfile.read()
 
@@ -69,6 +70,7 @@ def fetch_strenght(player_choice):
 
 
 def play():
+    global player_choice
     ask_player()
     computer_choice = ask_computer()
     print(
